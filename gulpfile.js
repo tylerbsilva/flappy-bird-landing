@@ -10,6 +10,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var livereload = require('livereload');
 
 // JavaScript linting task
 gulp.task('jshint', function() {
