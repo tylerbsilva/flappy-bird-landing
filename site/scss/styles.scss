@@ -1,0 +1,15 @@
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 1024px';
+
+.container {
+  @include outer-container;
+}
+section {
+  @include span-columns(12);
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+  @include media($desktop) {
+    @include span-columns(3);
+  }
+}
