@@ -1,0 +1,22 @@
+{
+  "name": "flappy-bird",
+  "version": "0.0.0",
+  "description": "Clone of the widely popular Flappy Bird Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tylerbsilva/flappy-bird.git"
+  },
+  "author": "Tyler Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerbsilva/flappy-bird/issues"
+  },
+  "homepage": "https://github.com/tylerbsilva/flappy-bird",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
