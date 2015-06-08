@@ -96,6 +96,9 @@ footer {
 .call-to-action {
   @include flexCenter;
   background-color: $cta-color;
+  background-image: url("../img/escher.png");
+  background-repeat: repeat;
+  background-blend-mode: screen;
   button{
     text-align: center;
     margin: 1em;

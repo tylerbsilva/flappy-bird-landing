@@ -531,7 +531,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1E74FF; }
+  background-color: #1E74FF;
+  background-image: url("../img/escher.png");
+  background-repeat: repeat;
+  background-blend-mode: screen; }
   .call-to-action button {
     text-align: center;
     margin: 1em;
