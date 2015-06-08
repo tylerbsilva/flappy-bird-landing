@@ -1,0 +1,95 @@
+// Modules and Variables
+@import "modules/base";
+
+body {
+  @include box-sizing(border-box);
+  background-color: $bg-color;
+  color: $text-primary;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background: $nav-footer-color;
+  text-align: right;
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 20%;
+    }
+  }
+}
+
+header {
+  @include fullwidth();
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $header-bg;
+  h1 {
+    text-align: center;
+    color: $header-text;
+    @include font-size(40);
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+footer {
+  @include fullwidth();
+  background-color: $nav-footer-color;
+}
+
+a{
+  color: $link-primary-color;
+  &:hover {
+    color: $link-primary-hover;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.intro {
+  @include flexCenter();
+  p {
+    text-align: center;
+    @include font-size(18);
+  }
+}
+
+.features {
+  ul{
+    @include flexCenter();
+    flex-flow: row;
+    @include fullwidth();
+    li {
+      @include thirdwidth();
+      height: 100%;
+    }
+  }
+}
+
+.call-to-action {
+  @include flexCenter;
+  background-color: $cta-color;
+}
