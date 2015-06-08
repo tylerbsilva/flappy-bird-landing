@@ -4,7 +4,6 @@
 body {
   @include box-sizing(border-box);
   background-color: $bg-color;
-  color: $text-primary;
   position: relative;
 }
 
@@ -38,7 +37,6 @@ header {
   background-color: $header-bg;
   h1 {
     text-align: center;
-    color: $header-text;
     @include font-size(40);
   }
 }
@@ -50,13 +48,6 @@ section {
 footer {
   @include fullwidth();
   background-color: $nav-footer-color;
-}
-
-a{
-  color: $link-primary-color;
-  &:hover {
-    color: $link-primary-hover;
-  }
 }
 
 ul {
@@ -92,4 +83,11 @@ li {
 .call-to-action {
   @include flexCenter;
   background-color: $cta-color;
+  button{
+    width: 20%;
+    height: 40px;
+    color: $green;
+    text-align: center;
+    @include border-radius(5px);
+  }
 }

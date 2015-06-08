@@ -1,14 +1,55 @@
-$text-primary: #333333;
-$text-secondary: #343434;
+$bp-small : 24em;
+$bp-med : 46.8em;
+$bp-large : 50em;
+$bp-xl : 73em;
 
 $nav-footer-color: #333;
 
 $header-bg: #EF5E29;
-$header-text: #FFFFFF;
-
-$link-primary-color: #00FF00;
-$link-primary-hover: darken($link-primary-color, 20%);
 
 $bg-color: #EEE;
 
-$cta-color: #0022EE;
+$cta-color: #1E74FF;
+
+$green: #33FF33;
+
+
+// Styles from Bitters
+// Typography
+$base-font-family: "Helvetica", sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: lighten($base-border-color, 10%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

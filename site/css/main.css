@@ -356,11 +356,56 @@ th {
   padding: 0; }
 
 body {
+  color: #333;
+  font-family: "Helvetica", sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+  a:active,
+  a:focus,
+  a:hover {
+    color: #2c5999; }
+  a:active,
+  a:focus {
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #EEE;
-  color: #333333;
   position: relative; }
 
 nav {
@@ -393,7 +438,6 @@ header {
   background-color: #EF5E29; }
   header h1 {
     text-align: center;
-    color: #FFFFFF;
     font-size: 40px;
     font-size: 5rem; }
 
@@ -406,11 +450,6 @@ footer {
   height: auto;
   clear: both;
   background-color: #333; }
-
-a {
-  color: #00FF00; }
-  a:hover {
-    color: #009900; }
 
 ul {
   margin: 0;
@@ -450,4 +489,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0022EE; }
+  background-color: #1E74FF; }
+  .call-to-action button {
+    width: 20%;
+    height: 40px;
+    color: #33FF33;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
