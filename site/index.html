@@ -73,7 +73,8 @@
 
   <script>
     var cb = function() {
-      var link = document.createElement('link'); link.rel = 'stylesheet';
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
       link.href = 'css/main.css';
       var head = document.getElementsByTagName('head')[0]; head.parentNode.insertBefore(link, head);
     };
