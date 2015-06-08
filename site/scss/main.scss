@@ -1,5 +1,6 @@
 // Modules and Variables
 @import "modules/base";
+@import url("http://fonts.googleapis.com/css?family=Nunito:400,700,300");
 
 body {
   @include box-sizing(border-box);
@@ -38,7 +39,8 @@ header {
   background-position: center;
   background-size: cover;
   background-color: $header-bg;
-  h1 {
+  #headline {
+    opacity: 0.0;
     text-align: center;
     @include font-size(38);
     margin: 0;
