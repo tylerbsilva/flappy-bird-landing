@@ -30,7 +30,9 @@
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 
 <!-- Critical CSS -->
-  <style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,section{display:block}body{color:#333;font-family:Nunito,sans-serif;font-feature-settings:"kern","liga","pnum";font-size:1em;-webkit-font-smoothing:antialiased;line-height:1.5}h1{font-family:Nunito,sans-serif;font-weight:700;font-size:1em;line-height:1.2;margin:0 0 .75em}p{margin:0 0 .75em}body{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-color:#EEE;position:relative}header{width:100%;clear:both;height:80vh;display:flex;align-items:center;justify-content:center;position:relative;background-image:url(../img/flappy-bird.png);background-position:center;background-size:cover;background-color:#FFF}header h1{text-align:center;font-size:45px;font-size:5.625rem;margin:0}section{padding:2rem}.intro{display:flex;align-items:center;justify-content:center;height:200px;background-image:url(../img/swirl_pattern.png);background-repeat:repeat;background-blend-mode:overlay;background-color:#f2f558}.intro p{text-align:center;margin:0;font-size:18px;font-size:2.25rem}</style>
+  <style>
+  html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,section{display:block}body{color:#333;font-family:Nunito,sans-serif;font-feature-settings:"kern","liga","pnum";font-size:1em;-webkit-font-smoothing:antialiased;line-height:1.5}h1{font-family:Nunito,sans-serif;font-weight:700;font-size:1em;line-height:1.2;margin:0 0 .75em}p{margin:0 0 .75em}body{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-color:#EEE;position:relative}header{width:100%;clear:both;height:80vh;display:flex;align-items:center;justify-content:center;position:relative;background-image:url(../img/flappy-bird.png);background-position:center;background-size:cover;background-color:#FFF}header h1{text-align:center;font-size:45px;font-size:5.625rem;margin:0}section{padding:2rem}.intro{display:flex;align-items:center;justify-content:center;height:200px;background-image:url(../img/swirl_pattern.png);background-repeat:repeat;background-blend-mode:overlay;background-color:#f2f558}.intro p{text-align:center;margin:0;font-size:18px;font-size:2.25rem}
+  </style>
 </head>
 <body>
   <link rel="stylesheet" href="css/main.css">
@@ -67,6 +69,18 @@
     <div class="social">Twitter, Facebook, and Google+ share buttons</div>
     <p>More footer stuff. Probably copyrights and links to terms of use and privacy statements.</p>
   </footer>
+  <script>
+    var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'css/main.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+
 </body>
 </html>
 <link rel="stylesheet" href="css/main.css">
