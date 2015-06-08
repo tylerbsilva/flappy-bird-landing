@@ -47,10 +47,9 @@
 
 @mixin thirdwidth() {
   position: relative;
-  width: 29.333%;
-  margin: 2.5%;
+  width: 33.3333%;
   height: auto;
-  float: left;
+  clear: both;
 }
 
 @mixin flexCenter() {

@@ -502,26 +502,30 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: row;
     position: relative;
     width: 100%;
     height: auto;
-    clear: both; }
-    @media screen and (max-width: 550px) {
+    clear: both;
+    flex-flow: column; }
+    @media (min-width: 768px) {
       .features .cards {
-        flex-flow: column; } }
+        flex-flow: row; } }
     .features .cards .card {
       position: relative;
-      width: 29.333%;
-      margin: 2.5%;
+      width: 100%;
       height: auto;
-      float: left;
-      text-align: center;
-      height: 100%; }
-      @media screen and (max-width: 550px) {
+      clear: both;
+      text-align: center; }
+      @media (min-width: 768px) {
         .features .cards .card {
           position: relative;
-          width: 100%;
+          width: 50%;
+          height: auto;
+          clear: both; } }
+      @media (min-width: 1024px) {
+        .features .cards .card {
+          position: relative;
+          width: 33.3333%;
           height: auto;
           clear: both; } }
       .features .cards .card h2 {
@@ -539,7 +543,7 @@ footer {
     text-align: center;
     margin: 1em;
     padding: .5em;
-    width: 40%;
+    width: 80%;
     height: auto;
     font-size: 14px;
     font-size: 1.75rem;
@@ -557,9 +561,9 @@ footer {
       position: relative;
       top: 5px;
       box-shadow: 0 0 1px #999999; }
-    @media screen and (max-width: 550px) {
+    @media (min-width: 768px) {
       .call-to-action button {
-        width: 80%; } }
+        width: 40%; } }
 
 footer {
   padding: 1em;

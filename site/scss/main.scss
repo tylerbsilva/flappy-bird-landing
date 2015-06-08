@@ -74,18 +74,20 @@ footer {
   background-color: #57D757;
   .cards{
     @include flexCenter();
-    flex-flow: row;
-    @media screen and (max-width: 550px){
-      flex-flow: column;
-    }
     @include fullwidth();
+    flex-flow: column;
+    @media (min-width: $tablet){
+      flex-flow: row;
+    }
     .card {
-      @include thirdwidth();
-      @media screen and (max-width: 550px){
-        @include fullwidth();
+      @include fullwidth();
+      @media (min-width: $tablet){
+        @include halfwidth();
+      }
+      @media (min-width: $desktop){
+        @include thirdwidth();
       }
       text-align: center;
-      height: 100%;
       h2 {
         margin: 0;
       }
@@ -103,13 +105,13 @@ footer {
     text-align: center;
     margin: 1em;
     padding: .5em;
-    width: 40%;
+    width: 80%;
     height: auto;
     @include font-size(14);
     @include buttonPress();
     @include border-radius(5px);
-    @media screen and (max-width: 550px){
-      width: 80%;
+    @media (min-width: $tablet){
+      width: 40%;
     }
   }
 }
