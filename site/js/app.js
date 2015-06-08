@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('#headline')
     .velocity("transition.slideUpIn",{
-      duration : 2000
+      duration : 1500,
+      delay: 500
     });
 });
