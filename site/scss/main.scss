@@ -34,10 +34,14 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-image: url("../img/flappy-bird.png");
+  background-position: center;
+  background-size: cover;
   background-color: $header-bg;
   h1 {
     text-align: center;
-    @include font-size(40);
+    @include font-size(45);
+    margin: 0;
   }
 }
 
@@ -46,36 +50,39 @@ section {
 }
 
 footer {
-  @include fullwidth();
   background-color: $nav-footer-color;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  display: inline-block;
 }
 
 .intro {
   @include flexCenter();
+  height: 200px;
+  background-image: url("../img/swirl_pattern.png");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: rgb(242,245,88);
   p {
     text-align: center;
+    margin: 0;
     @include font-size(18);
   }
 }
 
 .features {
-  ul{
+  background-image: url("../img/halftone.png");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: #57D757;
+  .cards{
     @include flexCenter();
     flex-flow: row;
     @include fullwidth();
-    li {
+    .card {
       @include thirdwidth();
+      text-align: center;
       height: 100%;
+      h2 {
+        margin: 0;
+      }
     }
   }
 }
@@ -84,10 +91,26 @@ li {
   @include flexCenter;
   background-color: $cta-color;
   button{
-    width: 20%;
-    height: 40px;
-    color: $green;
     text-align: center;
+    margin: 1em;
+    padding: .5em;
+    width: 40%;
+    height: auto;
+    @include font-size(14);
+    @include buttonPress();
     @include border-radius(5px);
+    @media screen and (max-width: 550px){
+      width: 80%;
+    }
+  }
+}
+
+footer {
+  padding: 1em;
+  color: #dddddd;
+  text-align: center;
+  background-color: $nav-footer-color;
+  p{
+    margin: 0;
   }
 }

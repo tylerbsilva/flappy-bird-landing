@@ -357,7 +357,7 @@ th {
 
 body {
   color: #333;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
@@ -369,7 +369,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -400,6 +401,32 @@ img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+button {
+  appearance: none;
+  background-color: #477dca;
+  border: none;
+  border-radius: 3px;
+  color: #eee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover,
+  button:focus {
+    background-color: #2c5999;
+    color: #fff; }
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
 
 body {
   -webkit-box-sizing: border-box;
@@ -435,55 +462,61 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-image: url("../img/flappy-bird.png");
+  background-position: center;
+  background-size: cover;
   background-color: #EF5E29; }
   header h1 {
     text-align: center;
-    font-size: 40px;
-    font-size: 5rem; }
+    font-size: 45px;
+    font-size: 5.625rem;
+    margin: 0; }
 
 section {
   padding: 2rem; }
 
 footer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  clear: both;
   background-color: #333; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none;
-  display: inline-block; }
 
 .intro {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 200px;
+  background-image: url("../img/swirl_pattern.png");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: #f2f558; }
   .intro p {
     text-align: center;
+    margin: 0;
     font-size: 18px;
     font-size: 2.25rem; }
 
-.features ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row;
-  position: relative;
-  width: 100%;
-  height: auto;
-  clear: both; }
-  .features ul li {
+.features {
+  background-image: url("../img/halftone.png");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: #57D757; }
+  .features .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
     position: relative;
-    width: 29.333%;
-    margin: 2.5%;
+    width: 100%;
     height: auto;
-    float: left;
-    height: 100%; }
+    clear: both; }
+    .features .cards .card {
+      position: relative;
+      width: 29.333%;
+      margin: 2.5%;
+      height: auto;
+      float: left;
+      text-align: center;
+      height: 100%; }
+      .features .cards .card h2 {
+        margin: 0; }
 
 .call-to-action {
   display: flex;
@@ -491,11 +524,35 @@ li {
   justify-content: center;
   background-color: #1E74FF; }
   .call-to-action button {
-    width: 20%;
-    height: 40px;
-    color: #33FF33;
     text-align: center;
+    margin: 1em;
+    padding: .5em;
+    width: 40%;
+    height: auto;
+    font-size: 14px;
+    font-size: 1.75rem;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 5px 0 #999999;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px; }
+    .call-to-action button:hover, .call-to-action button:active {
+      outline: 0;
+      border: 0; }
+    .call-to-action button:active {
+      position: relative;
+      top: 5px;
+      box-shadow: 0 0 1px #999999; }
+    @media screen and (max-width: 550px) {
+      .call-to-action button {
+        width: 80%; } }
+
+footer {
+  padding: 1em;
+  color: #dddddd;
+  text-align: center;
+  background-color: #333; }
+  footer p {
+    margin: 0; }

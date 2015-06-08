@@ -10,7 +10,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var livereload = require('livereload');
+var livereload = require('gulp-livereload');
 
 // JavaScript linting task
 gulp.task('jshint', function() {
@@ -30,6 +30,10 @@ gulp.task('sass', function() {
 gulp.task('watch', function() {
   gulp.watch('site/js/*.js', ['jshint']);
   gulp.watch('site/scss/*.scss', ['sass']);
+  // Create LiveReload server
+  livereload.listen();
+  // Watch any files in dist/, reload on change
+  gulp.watch(['site/css/**']).on('change', livereload.changed);
 });
 
 // Minify index
