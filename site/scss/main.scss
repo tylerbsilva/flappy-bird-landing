@@ -75,9 +75,15 @@ footer {
   .cards{
     @include flexCenter();
     flex-flow: row;
+    @media screen and (max-width: 550px){
+      flex-flow: column;
+    }
     @include fullwidth();
     .card {
       @include thirdwidth();
+      @media screen and (max-width: 550px){
+        @include fullwidth();
+      }
       text-align: center;
       height: 100%;
       h2 {

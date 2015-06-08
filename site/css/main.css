@@ -507,6 +507,9 @@ footer {
     width: 100%;
     height: auto;
     clear: both; }
+    @media screen and (max-width: 550px) {
+      .features .cards {
+        flex-flow: column; } }
     .features .cards .card {
       position: relative;
       width: 29.333%;
@@ -515,6 +518,12 @@ footer {
       float: left;
       text-align: center;
       height: 100%; }
+      @media screen and (max-width: 550px) {
+        .features .cards .card {
+          position: relative;
+          width: 100%;
+          height: auto;
+          clear: both; } }
       .features .cards .card h2 {
         margin: 0; }
 
