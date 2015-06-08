@@ -70,14 +70,16 @@
 
   <script>
     var cb = function() {
-    var l = document.createElement('link'); l.rel = 'stylesheet';
-    l.href = 'css/main.css';
-    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      var link = document.createElement('link'); link.rel = 'stylesheet';
+      link.href = 'css/main.css';
+      var head = document.getElementsByTagName('head')[0]; head.parentNode.insertBefore(link, head);
     };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-    webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||  webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) {
+      raf(cb);
+    } else {
+      window.addEventListener('load', cb);
+    }
   </script>
   <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
   <script src="js/velocity.js"></script>
