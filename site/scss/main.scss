@@ -40,7 +40,7 @@ header {
   background-color: $header-bg;
   h1 {
     text-align: center;
-    @include font-size(40);
+    @include font-size(38);
     margin: 0;
   }
 }
