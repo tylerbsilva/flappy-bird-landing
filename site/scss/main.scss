@@ -55,7 +55,8 @@ footer {
 
 .intro {
   @include flexCenter();
-  height: 200px;
+  height: auto;
+  padding: 1em;
   background-image: url("../img/swirl_pattern.png");
   background-repeat: repeat;
   background-blend-mode: overlay;
