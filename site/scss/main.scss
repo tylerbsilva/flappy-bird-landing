@@ -35,7 +35,13 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url("../img/flappy-bird.png");
+  background-image: url("../img/flappy-bird-small.png");
+  @media (min-width: $tablet){
+    background-image: url("../img/flappy-bird-medium.png")
+  }
+  @media (min-width: $desktop){
+    background-image: url("../img/flappy-bird-large.png")
+  }
   background-position: center;
   background-size: cover;
   background-color: $header-bg;
