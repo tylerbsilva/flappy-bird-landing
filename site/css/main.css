@@ -466,7 +466,8 @@ header {
   background-image: url("../img/flappy-bird.png");
   background-position: center;
   background-size: cover;
-  background-color: #FFF; }
+  background-color: #FFF;
+  opacity: 0.0; }
   header #headline {
     opacity: 0.0;
     text-align: center;
