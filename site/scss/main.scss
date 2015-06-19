@@ -112,17 +112,19 @@ footer {
   background-image: url("../img/escher.png");
   background-repeat: repeat;
   background-blend-mode: screen;
-  button{
-    text-align: center;
-    margin: 1em;
-    padding: .5em;
-    width: 80%;
-    height: auto;
-    @include font-size(14);
-    @include buttonPress();
-    @include border-radius(5px);
-    @media (min-width: $tablet){
-      width: 40%;
+  a{
+    button{
+      text-align: center;
+      margin: 1em;
+      padding: .5em;
+      width: 80%;
+      height: auto;
+      @include font-size(14);
+      @include buttonPress();
+      @include border-radius(5px);
+      @media (min-width: $tablet){
+        width: 40%;
+      }
     }
   }
 }
